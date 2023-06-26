@@ -9,7 +9,7 @@ create table if not exists Performer (
 create table if not exists Genre_Performer (
     id serial primary key,
     genre_id integer references Genre(genre_id),
-    perfromer_id integer references Performer(performer_id)
+    performer_id integer references Performer(performer_id)
 );
 create table if not exists Album (
     album_id serial primary key,
